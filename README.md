@@ -3,6 +3,11 @@
 To login EC2 instances use .pem key 
 yugandhar_automation.pem
 
+We are following "VPC with single public subnet" scenario for launching EC2 instance through puppet. You can look at the image "https://github.com/yugnadhary2017/Cleo_Assessment/commit/38b833673a1685fffe612c6b93ec987c94263198"
+
+
+
+
 #####Puppetmaster Access_Details##############
 We have launched one EC2 instance in AWS and configured it as puppet master to deploy and manage infrastructure.
 
@@ -169,4 +174,5 @@ else
 fi
 
 
+###################################################
 
