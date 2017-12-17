@@ -48,11 +48,18 @@ ec2_securitygroup { 'cleo-security-group':
   region      => 'us-east-1',
   vpc         => 'cleo-vpc',
   description => 'cleo securitygroup',
-  ingress     => [{
+  ingress     => [
+    {
     protocol  => 'tcp',
     port      => 22,
     cidr      => '0.0.0.0/0',
-  }],
+  },
+   {
+   protocol => 'http',
+   port     => 80,
+   cidr     => '0.0.0.0/0',
+  }, 
+],
   tags        => {
     name  => 'cleo-security-group',
   },
