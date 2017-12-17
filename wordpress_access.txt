@@ -1,0 +1,15 @@
+Wordpress access details : 
+
+http://54.235.231.143/
+
+user : yugandhar
+password : cleo@123
+
+
+As per Document, We have created two blogs.
+
+1st : cleo-blog => http://54.235.231.143/index.php/2017/12/17/cleo-blog/
+2nd : Current Weather State => http://54.235.231.143/index.php/2017/12/17/current-weather-state/ , 
+again click on the link which leads you weather report page.
+
+
