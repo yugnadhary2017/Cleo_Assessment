@@ -98,3 +98,35 @@ ec2_instance { 'cleo-instance':
   },
 }
 
+
+
+############
+
+=> We can manage the aws infra through puppet commands....
+#puppet resource ec2_instance
+#puppet resource ec2_vpc
+#puppet resource ec2_vpc_internet_gateway 
+#puppet resource ec2_vpc_routetable
+#puppet resource ec2_vpc_subnet
+#puppet resource ec2_securitygroup
+#puppet resource ec2_instance 
+
+Above commands are used for to get the information about AWS resources.
+
+How do you apply puppet changes ?
+
+#puppet parser validate /etc/puppet/modules/cleo_assessment/create.pp   # To validate the module
+
+#puppet apply /etc/puppet/modules/cleo_assessment/create.pp    # apply puppet changes to launch aws instances
+
+
+How do you access AWS EC2 Instances ?
+
+ssh -i  yugandhar_automation.pem  ec2-user@54.235.231.143 -p 22 -v     # EC2 cleo_instance access 
+
+ssh -i yugandhar_automation.pem ec2-user@54.242.47.24 -p 22 -v # EC2 puppetmaster access 
+
+
+###############
+
+
